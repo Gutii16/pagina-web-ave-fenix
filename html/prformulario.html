@@ -1,0 +1,199 @@
+<!DOCTYPE hmtl> 
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Matriculación - Web Oficial C.D. Ave Fénix</title>
+		<link rel="stylesheet" href="../css/style.css" type="text/css">
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon/diegogt.png">
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;1,400;1,600&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+		<a href="../index.html"><img src="../img/casa.svg"></a> <br />
+		<br />
+		
+		<audio src="../MP3/Intimidate_you.mp3" controls="controls" type="audio/mpeg" preload="preload">
+		</audio>
+		
+		<p>Bienvenidos a la Matriculación de Jugadores/as de Ave Fénix para la <b>temporada 2021 / 2022.</b></p>
+		<p>Para proceder con la inscripción tanto de los<b> nuevos jugadores</b>, como para la <b>renovación de los jugadores</b>,
+		se realizará una matriculación On-line a través del formulario que tenéis disponible a continuación.</p>
+		<p>Recordad, adjuntar los archivos solicitados, así como rellenar todos los campos marcados con un asterisco (*) ya que son obligatorios.</p>
+		<p></p>
+		
+		<center><h2>Formulario Inscripción Temporada 2021 / 2022</h2></center>
+
+		<form action="servidor.html" method="post" enctype="multipart/form-data"  >
+
+			<h3>Datos del Jugador/a</h3>
+			
+			<p>Nombre Jugador/a *<br/>
+				<span ><input type="text" name="nombre-jugador" value="" size="40" placeholder="Escribe tu nombre" required /></span> </p>
+			<p>Apellidos *<br />
+				<span ><input type="text" name="apellidos-jugador" value="" size="60" placeholder="Escribe tus apellidos" required /></span> </p>
+			<p>Sexo *<br />
+				<span ><select name="masculino" required ><option value="Masculino" >Masculino</option><option value="Femenino" >Femenino</option></select></span> </p>
+			<p>Fecha de Nacimiento *<br />
+				<span ><input type="date" name="fecha-jugador" value="" placeholder="2003-01-01" required /></span> </p>
+			<p>DNI *<br />
+				<span  ><input type="text" name="jugador-DNI" value="" size="40" maxlength="9" minlength="9" placeholder="8 números y 1 letra" required /></span> </p>
+			<p>Dirección *<br />
+				<span ><input type="text" name="direccion-jugador" value="" size="40" placeholder="Escribe tu dirección" required /></span> </p>
+			<p>Localidad *<br />
+				<span ><input type="text" name="localidad-jugador" value="" size="40" placeholder="Escribe tu localidad" required /></span> </p>
+			<p>Código Postal *<br />
+				<span ><input type="text" name="codigopostal-jugador" value="" size="40" placeholder="Escribe tu código postal" required /></span> </p>
+			<p>Teléfono Móvil Jugador/a* <br />
+			   <span ><input type="tel" name="movil-jugador" value="" size="40" placeholder="666666666" required /></span></p>
+			<p>Email Jugador/a* <br />
+			   <span  ><input type="email" name="email-jugador" value="" size="40" placeholder="email@gmail.com" required /></span></p>
+			   
+			<p>&nbsp;</p>
+			<div class="line"></div>
+			<p>&nbsp;</p>
+			
+			<h3>Datos del Tutor/a (Mayor de Edad) *</h3>
+			
+			<p>¿El/la <b>Jugador/a es menor de edad</b>?  <br />
+			<span ><select name="sí"><option value="Sí, es menor de edad">Sí, es menor de edad</option><option value="No, es mayor de edad">No, es mayor de edad</option></select></span></p>
+			<p>Nombre y Apellidos Tutor/a <br />
+				<span  ><input type="text" name="tutor-nombre" value="" size="40" placeholder="Escribe tu nombre" /><br />
+				<span  ><input type="text" name="tutor-apellido" value="" size="40" placeholder="Escribe tu apellido"  /></span> </p>
+			<p>Teléfono Móvil Tutor/a <br />
+			   <span  ><input type="tel" name="tutor-movil" value="" size="40" placeholder="666666666" /></span></p>
+			<p>Email Tutor/a <br />
+			   <span ><input type="email" name="tutor-email" value="" size="40" placeholder="email@gmail.com" /></span></p>
+			<p><span ><input type="checkbox" name="condiciones" value="1" /></span> Con la <b>firma del presente documento autorizo 
+			y doy mi consentimiento expreso al C.D. Ave Fénix</b> para formar parte del mismo, tramitar licencia federativa 
+			y de la misma manera, realizar entrenamientos y participar en las competiciones tanto oficiales 
+			como no oficiales en los equipos que el club considere más conveniente para la temporada 21-22.</p>
+			
+			<p>&nbsp;</p>
+			<div class="line"></div>
+			<p>&nbsp;</p>
+			
+			<h3>Forma de Pago</h3>
+
+			<p>Señalar una de las 2 opciones ofrecidas a continuación: (<a href="../PDF/PruebaPW.pdf" target="blank">Ver cuadro de sección de información.</a> La <b>cuota variará según equipo</b> y días de entrenamiento)</p>
+			<p><b>MATRÍCULA</b>: Pago <b>obligatorio de 50€</b> para formalizar la inscripción y reserva de plaza para temporada 21-22. (Adjuntar justificante en apartado de Documentación)</p>
+			
+			<h4 style="text-align:center">ES18 40X2 0X62 419X X137 00X9 / BBVA <br />
+			
+			<p><b>A continuación, elija la forma de pago para las cuotas de la temporada que más le convenga: </b></p>
+			<p><span ><select name="menu-forma-pago" ><option value="Opción 1 - PAGO UNICO (Septiembre 2021)">Opción 1 - PAGO UNICO (Septiembre 2021)</option><option value="Opción 2 - PAGO 4 CUOTAS (Septiembre 21, Noviembre 21, Enero 22 y Marzo 22)">Opción 2 - PAGO 4 CUOTAS (Septiembre 21, Noviembre 21, Enero 22 y Marzo 22)</option></select></span></p>
+			
+			<p>&nbsp;</p>
+			<div class="line"></div>
+			<p>&nbsp;</p>
+			
+			<h3>Datos para Orden de domiciliación de adeudo directo SEPA</h3>
+			
+			<p>Por favor, <b>introduce a continuación el IBAN de la cuenta bancaria</b> donde se van a realizar los adeudos correspondientes según la opción escogida anteriormente</p>
+			<p>El resto de datos del titular deberán coincidir con los del tutor/a del jugador/a arriba indicados.</p>
+			<p><b>Titular de cuenta bancaria (Nombre y Apellidos)</b> *<br />
+				<span ><input type="text" name="cuenta-titular" value="" size="60" placeholder="Nombre y apellidos" required /></span> </p>
+			<p><b>Número de cuenta en formato IBAN (NO introducir espacios)</b> *<br />
+				<span ><textarea name="cuenta-iban" cols="40" rows="10" maxlength="24" minlength="24" placeholder="ES6621000418401234567891 ¡NO INTRODUCIR ESPACIOS!" required ></textarea></span> </p>
+			<p><span ><input type="checkbox" name="condicion-1" value="1" required /></span> Mediante la firma de esta orden de domiciliación, <b>el tutor autoriza al acreedor a enviar instrucciones a la entidad
+			del club para adeudar su cuenta</b> y a la entidad para efectuar los adeudos en su cuenta siguiendo las instrucciones del acreedor. Como parte de sus derechos, el deudor está legitimado al reembolso 
+			por su entidad en los términos y condiciones del contrato suscrito con la misma. La solicitud de reembolso deberá efectuarse dentro de las ocho semanas que siguen a la fecha de adeudo en cuenta.
+			Puede obtener información adicional sobre sus derechos en su entidad financiera.</p>
+			
+			<p>&nbsp;</p>
+			<div class="line"></div>
+			<p>&nbsp;</p>
+			
+			<h3>Equipamiento Deportivo</h3>
+			
+			<p><b>Si eres un/a jugador/a nuevo/a y necesitas las equipaciones</b>, o por el contrario eres un jugador del club que necesita una prenda de la equipación oficial, rellena el siguiente apartado.</p>
+			<p><span ><select name="equipamiento" ><option value="No, no necesito equipamiento">No, no necesito equipamiento</option><option value="Sí, necesito equipamiento">Sí, necesito equipamiento</option></select></span></p>
+			<div >
+				<p>Elige el pack que necesitas para comenzar la nueva temporada:</p>
+				
+					<ul>
+						<li><b>Pack Completo Jugador:</b> Incluye camiseta de juego azul y blanca, pantalón de juego azul, cubre de calentamiento y camiseta reversible de entrenamiento. Tallas: </li>
+						<li><b>Pack Baby Basket:</b> Incluye camiseta y pantalón de entrenamiento/juego.</li>
+					</ul>
+					
+				<p><span ><select name="pack-equipamientos" ><option value="PACK COMPLETO JUGADOR (Pack obligatorio para todos los equipos de competición) - Precio 75€">PACK COMPLETO JUGADOR (Pack obligatorio para todos los equipos de competición) - Precio 75€</option><option value="PACK BASICO JUGADOR (Pack obligatorio para BABY BASKET) - Precio 20€">PACK BASICO JUGADOR (Pack obligatorio para BABY BASKET) - Precio 20€</option></select></span></p>
+					<span ><input type="text" name="talla-pack-completo" value="" size="40" placeholder="8,10,12,XS,S,M,L,XL,XXL" /></span>
+			</div>
+			<div>
+				<span ><input type="text" name="talla-pack-baby" value="" size="40" placeholder="8,10,12,XS" /></span>
+			</div>
+			
+				<ul>
+					<li>Para <b>participar en las competiciones será obligatorio disponer de la equipación oficial completa del club</b> de la temporada vigente. El jugador se compromete a adquirir cualquier prenda que le falte del pack, ya sea, por deterioro o perdida para poder competir. Para adquirirlo, visita la <a href="../PDF/PruebaPW.pdf" target="_blank">tienda online de Ave Fénix.</a> </li>
+					<li>El club se compromete a <b>mantener un mismo diseño de equipaciones durante un mínimo de 2 temporadas</b>, pudiendo a partir de entonces variar el diseño, ya sea por imposición de la marca o por cambio de diseño. En caso de tener que cambiar la equipación antes de 2 temporadas, el club se haría cargo del 100% del coste. El diseño de la equipación actual, empezó en la temporada 2019/20.</li>
+					<li>Esta temporada se ha decidido que, <b>debido a la pandemia por el COVID19</b> y sus probables repercusiones económicas a las familias de nuestro club, no haya cambio de equipación, por lo que, se deberá usar la misma que la temporada anterior.</li>
+					<li>Para participar en las competiciones será obligatorio disponer de la equipación oficial completa del club de la temporada vigente. El jugador se compromete a adquirir cualquier prenda que le falte del pack, ya sea, por deterioro o perdida para poder competir.</li>
+					<li>Los jugadores <b>deberán adquirir el chándal oficial de competición al inicio de la temporada</b> de uso obligatorio (opcional para Baby basket) (PVP 20,00€)</li>
+				</ul>
+			
+			<p><b>TIENDA OFICIAL:</b> El club dispone de <a href="../PDF/PruebaPW.pdf" target="_blank">la tienda online del club</a> donde se venden todos los productos, tanto oficiales de competición, como otros de merchandising para completar los packs o para aficionados.</p>
+			
+			<p>&nbsp;</p>
+			<div class="line"></div>
+			<p>&nbsp;</p>
+			
+			<h3>Reconocimiento Médico</h3>
+			
+			<p>Señalar una de las 2 opciones ofrecidas a continuación: (Ver cuadro de secciónde información.) La <b>cuota variará según equipo</b> y días de entrenamiento)</p>
+			<p><span >
+				<select name="reconocimiento" >
+					<option value="Opción 1 - Reconocimiento oficial Centro Médico del Club. Precio: 10€">Opción 1 - Reconocimiento oficial Centro Médico del Club. Precio: 10€</option>
+					<option value="Opción 2 - Reconocimiento particular. Aportar certificado médico o ficha federativa cumplimentada por facultativo.">Opción 2 - Reconocimiento particular. Aportar certificado médico o ficha federativa cumplimentada por facultativo.</option>
+				</select>
+			</span>
+			</p>
+			<p>Adjuntar Certificado médico (en caso de no realizarlo con el club) *<br />
+				<span ><input type="file" name="certificado" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" required /></span> </p>
+			</div>
+			<p><b>Nota:</b> los reconocimientos médicos se realizarán en <b>Clínica las Aguilas, Madrid (Calle José de Cadalso, 51 bajo)</b> antes del inicio de las competiciones federadas.</p>
+			<p>Este <b>precio es especial para nuestros socios, siempre y cuando estén agendados por nuestra parte</b>. Si el jugador realiza el reconocimiento fuera de la agenda del club tendrá otro precio diferente y a un precio superior.</p>
+			
+			<p>&nbsp;</p>
+			<div class="line"></div>
+			<p>&nbsp;</p>
+			
+			<h3>Documentación a presentar con la Inscripción</h3>
+			
+			<p>Junto con el anterior formulario relleno, será necesario que el/la tutor/a legal del jugador/a <b>adjunte la siguiente documentación al formulario de matriculación</b>.</p>
+			<p><b>Justificante de pago</b> de la matrícula (reserva de plaza) *<br />
+				<span ><input type="file" name="justificante" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" required /></span> </p>
+			<p><b>Foto tamaño carnet</b> de jugador/a *<br />
+				<span ><input type="file" name="foto" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" required /></span> </p>
+			<p><b>DNI (ambas caras)</b> de jugador/a *<br />
+				<span ><input type="file" name="dni" size="40" accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv" required /></span> </p>
+			
+			<p>&nbsp;</p>
+			<div class="line"></div>
+			<p>&nbsp;</p>
+			
+			<h3>Protección de Datos y Consentimiento</h3>
+			
+			<p><b>Información básica sobre protección de datos conforme al Reglamento General de Protección de Datos (UE) 2016/679, de 27 de abril de 2016 (RGPD) y a la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD)</b>.</p>
+				<ul>
+					<li><a href="../PDF/PruebaPW.pdf" target="blank">Información y Tarifas</a></li>
+					<li><a href="../PDF/PruebaPW.pdf" target="blank">Tratamiento y Protección de Datos</a></li>
+					<li><a href="../PDF/PruebaPW.pdf" target="blank">Compromiso Juego Limpio (Código de Conducta)</a></li>
+				</ul>
+			
+			<h4>Consentimiento y firma (obligado cumplimiento)</h4>
+			
+			<p>Mediante la firma abajo del presente documento el propio jugador/a y en su caso el tutor del jugador/a menor de edad <b>autoriza y otorga su consentimiento expreso y explícito al Club Deportivo Ave Fénix para que pueda tratar los datos personales facilitados</b> para las finalidades informadas en el anexo de protección de datos.</p>
+			<p><span ><input type="checkbox" name="terminos-1" value="1" required /></span></span></span> <b>He leído y acepto las condiciones y los términos</b> arriba indicados, autorizando y otorgando mi consentimiento expreso para el tratamiento de los datos facilitados según las finalidades indicadas en la información básica de protección de datos puesta a mi disposición.</p>
+			<p><span ><input type="checkbox" name="rrss" value="1" required /></span></span></span> <b>Autorizo y doy mi consentimiento expreso</b> al Club Deportivo Ave Fénix a realizar y publicar en los perfiles de redes sociales y página web del Club, fotografías y/o grabaciones del jugador/a mayor de edad y del jugador/a menor de edad y de su tutor/a en las cuales aparezca individualmente o en grupo obtenidas durante la realización de las diferentes actividades tanto deportivas como sociales en las que participe o asista promovidas por el Club Deportivo Ave Fénix, con el objetivo de promocionar el deporte y el club.</p>
+			<p><span ><input type="checkbox" name="comunicaciones" value="1" required /></span></span></span> <b>Autorizo y doy mi consentimiento expreso</b> al Club Deportivo Ave Fénix para recibir comunicaciones comerciales y publicitarias de los campus de basket organizados por el Club y de las actividades relacionadas con el Club tanto deportivas como sociales.</p>
+			<p><span ><input type="checkbox" name="juego-limpio" value="1" required" /></span></span></span> <b>He leído y acepto</b> el compromiso de Juego Limpio indispensable para poder participar en actividades deportivas en Aluche.</p>
+			
+			<p><input type="submit" value="Enviar datos" href="servidor.html" /></p>
+			
+		</form>
+		
+	</body>
+</html>
